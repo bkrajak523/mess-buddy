@@ -17,7 +17,7 @@ nav ul {
     padding: 0;
 }
 
-nav ul li {
+Nav ul li {
     display: inline;
     margin-right: 10px;
 }
@@ -50,8 +50,4 @@ button {
     background-color: #333;
     color: white;
     border: none;
-}
-.cen{
-    text-align: center;
-
 }

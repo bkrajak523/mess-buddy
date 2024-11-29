@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<! DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,19 +11,16 @@
         <nav>
             <ul>
                 <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('menu') }}">Menu</a></li>
                 
                 <li><a href="{{ url_for('complaints') }}">Complaints</a></li>
                 <li><a href="{{ url_for('rebate') }}">Rebate Form</a></li>
             </ul>
         </nav>
-    
-
     </header>
     <main>
-        {% block content %} {% endblock %}
-        <img src="{{ url_for('static', filename='images/menu.png') }}" alt="menu"
+        {% block content %}{% endblock %}
     </main>
-    <footer>Made in ❣️ with Cicada</footer>
     <script>
         
     </script>
