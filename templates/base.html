@@ -16,10 +16,14 @@
                 <li><a href="{{ url_for('rebate') }}">Rebate Form</a></li>
             </ul>
         </nav>
+    
+
     </header>
     <main>
-        {% block content %}{% endblock %}
+        {% block content %} {% endblock %}
+        <img src="{{ url_for('static', filename='images/menu.png') }}" alt="menu"
     </main>
+    
     <script>
         
     </script>
