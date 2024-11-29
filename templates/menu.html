@@ -1,7 +1,9 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>Menu</h1>
-<p>Here is the menu for the week:</p>
+<div class="main_content">
+<h1 class = "cen">Menu</h1>
+<p class = "cen upd">Here is the menu for the week:</p>
 <img src="{{ url_for('static', filename='images/menu.png') }}" alt="Menu Image">
+</div>
 {% endblock %}
