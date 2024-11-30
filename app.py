@@ -19,6 +19,7 @@ db = mysql.connector.connect(
 def index():
     return render_template('index.html')
 
+#menu page
 @app.route('/menu')
 def menu():
     return render_template('menu.html')
@@ -33,7 +34,7 @@ def complaints():
         cursor = db.cursor()
         cursor.execute("INSERT INTO complaints (student_name, complaint_text) VALUES (%s, %s)", (student_name, complaint_text))
         db.commit()
-        flash('Complaint submitted successfully!')
+        
         return redirect('/complaints')
     return render_template('complaints.html')
 
@@ -46,7 +47,7 @@ def rebate():
         cursor = db.cursor()
         cursor.execute("INSERT INTO rebate_requests (student_id, reason) VALUES (%s, %s)", (student_id, reason))
         db.commit()
-        flash('Rebate form submitted successfully!')
+        
         return redirect('/rebate')
     return render_template('rebate.html')
 
