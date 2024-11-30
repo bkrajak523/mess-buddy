@@ -26,6 +26,7 @@ def menu():
 # Complaint Page
 @app.route('/complaints', methods=['GET', 'POST'])
 def complaints():
+    
     if request.method == 'POST':
         student_name = request.form['student_name']
         complaint_text = request.form['complaint_text']

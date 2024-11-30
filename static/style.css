@@ -1,3 +1,9 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -97,4 +103,43 @@ footer {
     
 .main_content{
     margin-top: 80px;
+}
+.mess_menu {
+    height: 90%;
+    width: 80%;
+    display: block;
+    margin : 0 auto;
+
+    
+
+}
+.comp{
+    background-image: url('images/bg_comp.jpeg');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.index{
+    background-size:cover;
+    background-image: url("images/bg_home.jpeg");
+    background-repeat: no-repeat;
+}
+.ind_head{
+    font-family: "Space Mono",monospace;
+}
+.comp_image{
+    height: auto;
+    width: 30%;
+    display: block;  
+    margin: 0 auto;
+}
+.rebate{
+    background-size: cover;
+    background-image: url("images/bg_rebate.jpg");
+    background-repeat: no-repeat;
+}
+.rebate_image{
+    height: auto;
+    width: 30%;
+    display: block;  
+    margin: 0 auto;
 }

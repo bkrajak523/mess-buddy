@@ -3,16 +3,20 @@
 
 {% extends 'base.html' %}
 {% block content %}
+<body class = "comp">
 <div class="main_content">
-    <h2>Submit a Complaint</h2>
+    <h2 class = "cen">Submit a Complaint</h2>
     <form method="POST">
-        <label for="student_name">Your Name</label>
+        <label for="student_name" class = "cen">Your Name</label>
         <input type="text" id="student_name" name="student_name" required>
         
-        <label for="complaint_text">Complaint</label>
+        <label for="complaint_text" class = "cen">Complaint</label>
         <textarea id="complaint_text" name="complaint_text" required></textarea>
 
         <button type="submit">Submit</button>
     </form>
 </div>
+<img src="{{ url_for('static', filename='images/comp.jpeg') }}"  class = "comp_image"alt="comp Image">
+
+</body>
 {% endblock %}
