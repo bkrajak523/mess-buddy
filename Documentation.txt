@@ -1,0 +1,78 @@
+Documentation for Mess Buddy
+
+#Introduction
+
+Mess Buddy is a full-stack web designed to streamline communication and operations between mess in-charges and students in hostel environments. The platform simplifies information sharing, enhances accessibility to mess-related updates, and provides a digital interface for complaint management for maintaining more transparency, meal planning, and rebates.
+
+#Key Features
+
+1)Mess Menu Display
+2)Digital Complaint Box
+Allows students to submit complaints digitally to mess authorities.
+It maintains the time of user submission
+
+3)Mess Rebate System
+Students can apply for mess rebates in case of leaves or emergencies.
+
+
+
+
+
+#Technology Stack
+
+Frontend
+Web:
+HTML, CSS, JavaScript.
+
+Backend
+Flask (Python framework).
+Database
+MySQL for structured data storage.
+
+#Architecture
+1)Frontend-Backend Interaction:
+The frontend sends HTTP requests to the Flask backend for data retrieval and submission.
+
+2)Database Manangement:
+Backend processes requests, interacts with the MySQL database, and returns responses.
+Database Management:
+
+Tables for users, complaints, rebates, menu details.
+SQL queries for CRUD operations.
+
+
+
+#User Roles and Functionalities
+
+1)Admin (Mess In-Charge):
+
+Add and update the mess menu.
+View and respond to complaints.
+Process rebate requests.
+I
+Student:
+
+View the mess menu.
+Submit complaints and track status.
+Apply for mess rebates.
+
+#Project Workflow
+1)Planning:
+ We have planned strategic plan and assign the role to team mates
+
+2)Development:
+Frontend and backend modules developed in parallel.
+
+
+
+3)Testing:
+Unit testing for individual components.
+Integration testing for frontend-backend interactions.
+
+
+
+
+#Conclusion:-
+
+Mess Buddy is a user-centric solution addressing the communication gaps in hostel mess management.
+ By providing an intuitive platform for students and mess authorities, it fosters a seamless, transparent, and efficient environment.
