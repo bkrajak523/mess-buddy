@@ -7,10 +7,10 @@ app.secret_key = 'your_secret_key'
 # MySQL Configuration
 
 db = mysql.connector.connect(
-   user='root',
-   host='localhost',
-   database='mess-buddy',
-   passwd='hjt&()8976A'
+  user='root',
+  host='localhost',
+  database='mess-buddy',
+  password='hjt&()8976A'
 )
 
 
@@ -19,7 +19,9 @@ db = mysql.connector.connect(
 def index():
     return render_template('index.html')
 
-
+@app.route('/menu')
+def menu():
+    return render_template('menu.html')
 
 # Complaint Page
 @app.route('/complaints', methods=['GET', 'POST'])
@@ -47,5 +49,5 @@ def rebate():
         return redirect('/rebate')
     return render_template('rebate.html')
 
-if __name__ == '__main__':
+if __name__== '_main_':
     app.run(debug=True)

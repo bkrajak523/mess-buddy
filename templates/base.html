@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<! DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,15 +11,21 @@
         <nav>
             <ul>
                 <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('menu') }}">Menu</a></li>
                 
                 <li><a href="{{ url_for('complaints') }}">Complaints</a></li>
                 <li><a href="{{ url_for('rebate') }}">Rebate Form</a></li>
             </ul>
         </nav>
     </header>
+    
     <main>
         {% block content %}{% endblock %}
+        
     </main>
+    <footer>
+        <h class = "center">Made with 🧡 by Cicada  </h>
+    </footer>
     <script>
         
     </script>
