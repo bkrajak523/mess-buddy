@@ -1,0 +1,20 @@
+
+CREATE DATABASE  mess-buddy;
+
+USE mess-buddy;
+
+CREATE TABLE complaints (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    student_name VARCHAR(255) NOT NULL,
+    complaint_text TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+CREATE TABLE rebate_requests (
+     id INT AUTO_INCREMENT PRIMARY KEY,
+     student_id VARCHAR(255) NOT NULL,
+     reason TEXT NOT NULL,
+     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
